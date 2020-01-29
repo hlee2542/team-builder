@@ -1,11 +1,12 @@
 import React from 'react';
+import './member.css';
 
 const Member = (props) => {
     return (
-        <div>
-            <p>{props.member.name}</p>
-            <p>{props.member.email}</p>
-            <p>{props.member.role}</p>
+        <div className='memberCard'>
+            <h4>Name: {props.member.name}</h4>
+            <p>Email: {props.member.email}</p>
+            <p>Role: {props.member.role}</p>
         </div>
     )
 }
