@@ -4,7 +4,7 @@ const Form = (props) => {
     let [member, setMember] = useState({name: '', email: '', role: ''});
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.setMembers([...props.members, [member]]);
+        props.setMembers(props.members.concat([member]));
         setMember({name: '', email: '', role: ''});
     }
     return (
